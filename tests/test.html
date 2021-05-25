@@ -45,13 +45,15 @@
 <body style="background: rgb(255, 255, 255);">
 
     <div class="sidenav">
-        <a herf="#projects">Projects</a>
-        <a herf="#teams">Teams</a>
-        <a herf="#clients">Clients</a>
+        <button type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Projects:"'>Projects</button>
+        <p> </p>
+        <button type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Teams:"'>Teams</button>
+        <p> </p>
+        <button type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Clients:"'>Clients</button>
     </div>
 
     <div class="main">
         <h2>Hello World</h2>
-        <p>This is just for testing the sidebar feature</p>
+        <p id="mainText">This is for testing the sidebar feature</p>
     </div>
 </body>
