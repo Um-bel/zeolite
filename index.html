@@ -20,18 +20,20 @@
         .sidenav a {
             padding: 6px 8px 6px 16px; 
             text-decoration: none; 
-            font-size: 30; 
+            font-size: 25px; 
             color: #818181; 
             display: block; 
         }
 
         .sidenav a:hover {
+            cursor: pointer; 
             color: #f1f1f1; 
         }
 
         .main {
             margin-left: 160px; 
             font-size: 28px; 
+            color: #f1f1f1; 
             padding: 0px 10px; 
         }
 
@@ -42,15 +44,16 @@
     </style>
 </head>
 
-<body style="background: rgb(255, 255, 255);">
+<body style="background: rgb(61, 61, 61);">
 
     <div class="sidenav">
-        <button type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Projects:"'>Projects</button>
-        <p> </p>
-        <button type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Teams:"'>Teams</button>
-        <p> </p>
-        <button type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Clients:"'>Clients</button>
+        <a type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Projects:"'>Projects</a>
+        <p></p>
+        <a type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Teams:"'>Teams</a>
+        <p></p>
+        <a type="button" onclick='document.getElementById("mainText").innerHTML = "Showing Clients:"'>Clients</a>
     </div>
+    
 
     <div class="main">
         <h2>Hello World</h2>
