@@ -21,11 +21,11 @@ app.whenReady().then(() => {
         }
     })
 
-// const template = [
-//     {label: 'zeolite'}
-// ]
-// const menu = Menu.buildFromTemplate(template)
-// Menu.setApplicationMenu(menu)
+const template = [
+    {label: 'zeolite'}
+]
+const menu = Menu.buildFromTemplate(template)
+Menu.setApplicationMenu(menu)
 })
 
 app.on('window-all-closed', () => {
