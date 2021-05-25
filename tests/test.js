@@ -1,10 +1,13 @@
 const { app, BrowserWindow, Menu } = require('electron'); 
 const path = require('path'); 
+const iconPath = path.join(__dirname, '../zeolite.png')
 
 function createWindow() {
     const win = new BrowserWindow({
         width: 1300, 
         height: 800, 
+        icon: iconPath, 
+        title: 'Zeolite', 
         webPreferences: {
             preload: path.join(__dirname, 'testPreload.js')
         }
