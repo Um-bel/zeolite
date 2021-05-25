@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta charset="UTF-8">
-    <title style="color:aliceblue">Hello World!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .sidenav {
+            height: 100%;
+            width: 160px; 
+            position: fixed; 
+            z-index: 1; 
+            top: 0; 
+            left: 0; 
+            background-color: rgb(80, 24, 24);
+            overflow-x: hidden; 
+            padding-top: 20px; 
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px; 
+            text-decoration: none; 
+            font-size: 30; 
+            color: #818181; 
+            display: block; 
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1; 
+        }
+
+        .main {
+            margin-left: 160px; 
+            font-size: 28px; 
+            padding: 0px 10px; 
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
 </head>
-<body style="background: rgb(136, 42, 42);">
-    <h1 style="color:aliceblue">Hello World!</h1>
-    <p style="color:aliceblue">
-        We are using Node.js <span id="node-version"></span>,
-        Chromium <span id="chrome-version"></span>,
-        and Electron <span id="electron-version"></span>.
-    </p>
+
+<body style="background: rgb(255, 255, 255);">
+
+    <div class="sidenav">
+        <a herf="#projects">Projects</a>
+        <a herf="#teams">Teams</a>
+        <a herf="#clients">Clients</a>
+    </div>
+
+    <div class="main">
+        <h2>Hello World</h2>
+        <p>This is just for testing the sidebar feature</p>
+    </div>
 </body>
-</html>
