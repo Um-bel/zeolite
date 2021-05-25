@@ -20,12 +20,7 @@ app.whenReady().then(() => {
             createWindow()
         }
     })
-
-const template = [
-    {label: 'zeolite'}
-]
-const menu = Menu.buildFromTemplate(template)
-Menu.setApplicationMenu(menu)
+Menu.setApplicationMenu(null)
 })
 
 app.on('window-all-closed', () => {
