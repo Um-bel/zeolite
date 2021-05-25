@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron'); 
+const { app, BrowserWindow, Menu } = require('electron'); 
 const path = require('path'); 
 
 function createWindow() {
@@ -15,12 +15,17 @@ function createWindow() {
 
 app.whenReady().then(() => {
     createWindow()
-
     app.on('activate', () => {
         if(BrowserWindow.getAllWindows().length === 0) {
             createWindow()
         }
     })
+
+// const template = [
+//     {label: 'zeolite'}
+// ]
+// const menu = Menu.buildFromTemplate(template)
+// Menu.setApplicationMenu(menu)
 })
 
 app.on('window-all-closed', () => {
